@@ -1,56 +1,62 @@
-Central de Treinamentos NV7
+# Central de Treinamentos NV7
 
-🚀 Minha Central de Treinamentos está no ar!
+🚀 **Bem-vindo à Central de Treinamentos NV7!**
 
-Este é um projeto que desenvolvi para criar uma página estática com um menu lateral interativo, com o objetivo de facilitar o acesso aos processos e treinamentos internos da empresa.
+Este é um projeto desenvolvido para organizar e padronizar os processos internos da empresa, facilitando o acesso a treinamentos e documentações importantes.
 
-🌐 Acesse a Central
+---
 
-👉 Link para a Central de Treinamentos NV7
+## 🌟 Funcionalidades
+- Menu lateral interativo para navegação fácil entre os conteúdos.
+- Estrutura clara e organizada para diferentes temas e processos.
+- Plataforma estática e intuitiva para acesso rápido aos materiais.
 
-📂 Código no GitHub
+---
 
-👉 Repositório no GitHub
+## 🎯 Objetivo
+O principal objetivo deste projeto é proporcionar um ambiente centralizado e acessível para toda a equipe, permitindo que os treinamentos e processos sejam apresentados de forma mais eficiente e organizada.
 
-🎯 Objetivo do Projeto
+---
 
-O principal objetivo deste projeto foi criar uma plataforma organizada e intuitiva para padronizar os processos internos e facilitar o acesso aos treinamentos da equipe. Com essa solução, conseguimos melhorar a produtividade e a organização na hora de apresentar conteúdos.
+## 🛠️ Tecnologias Utilizadas
+- **HTML**: Para estruturação do site.
+- **CSS**: Para estilização e design do menu e das páginas.
+- **JavaScript**: Para implementar a interatividade no menu lateral.
 
-Apesar de ser um projeto simples, ele tem se mostrado muito útil e funcional.
+---
 
-🛠️ Tecnologias Utilizadas
+## 📚 Aprendizados
+Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou como uma solução simples pode trazer um grande impacto no ambiente de trabalho. Foi também uma oportunidade de explorar:
+- Organização de informações.
+- Melhorias na experiência do usuário (UX).
+- Desenvolvimento rápido com tecnologias básicas.
 
-HTML: Para a estruturação da página.
+---
 
-CSS: Para estilização e design.
+## 📱 Melhorias Futuras
+- Tornar a página responsiva para dispositivos móveis.
+- Adicionar funcionalidade de busca para facilitar a localização de documentos.
+- Implementar autenticação de usuários para maior segurança.
+- Integrar com APIs para atualização dinâmica de conteúdos.
 
-JavaScript: Para a interatividade do menu lateral.
+---
 
-🚀 Aprendizado
+## 📸 Prévia do Projeto
 
-Este projeto foi um grande aprendizado! Ele me mostrou como é possível criar soluções rápidas e práticas que geram grande impacto no dia a dia da equipe.
-
-Mesmo sem ser a linguagem em que pretendo me aprofundar, foi gratificante aplicar conhecimentos em HTML, CSS e JavaScript para resolver um problema real.
-
-📱 Melhorias Futuras
-
-Tornar a página responsiva para dispositivos móveis.
-
-Implementar uma ferramenta de busca para localizar documentos com mais facilidade.
-
-Adicionar autenticação para garantir mais segurança no acesso aos treinamentos.
-
-Integrar com um sistema dinâmico para atualizar os conteúdos com maior agilidade.
-
-💡 Contribuições e Feedback
-
-Se você tiver dicas, sugestões ou feedback sobre este projeto, ficarei muito grato! Estou sempre em busca de aprender e evoluir como desenvolvedor. 😊
-
-📸 Prévia
-
-Menu Lateral Interativo: ![image](https://github.com/user-attachments/assets/a23cf7d9-c8e8-4c30-8214-9a973291c513)
-
-Interface Geral: ![image](https://github.com/user-attachments/assets/b97d8c82-c205-407d-8011-2ccb77d967dc)
+1. **Menu Lateral Interativo**
+![Menu Lateral](https://github.com/user-attachments/assets/a23cf7d9-c8e8-4c30-8214-9a973291c513)
 
 
-💻 Desenvolvido por Matheus de Lucas Arouca
+2. **Interface Geral**
+![Interface](https://github.com/user-attachments/assets/b97d8c82-c205-407d-8011-2ccb77d967dc)
+
+
+---
+
+## 💡 Como Contribuir
+Contribuições são muito bem-vindas! Se você tiver ideias, sugestões ou encontrar problemas, fique à vontade para abrir uma _issue_ ou enviar um _pull request_.
+
+---
+
+💻 **Desenvolvido por Matheus de Lucas Arouca**
+
