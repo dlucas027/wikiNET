@@ -1,102 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Miniver&family=Nosifer&family=Noto+Sans+Warang+Citi&family=Outfit:wght@100..900&family=Yatra+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <title>NV7 Treinamentos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Lateral Expansível</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <nav class="menu">
-        <div class="expandir">
-            <i class="bi bi-list" id="icone1"></i>
-        </div>
-        <ul>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Monday</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Viabilidade OLT CLoud</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Help Desk</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Nome e Senha da Rede</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Viabilidade IXC</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Análise de Dados</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Conhecendo o cliente</span>
-                </a>
-            </li>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Equipamentos</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/"target="_blank">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Disponibilidade CTO</span>
-                </a>
-            </li>
-            <li class="item1">
-                <a href="https://nv7telecom.com.br/">
-                    <span class="icone"><i></i></span>
-                    <span class="link">Provisionamento</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>   
-<main>
-    <div id="background">
-        <img id="banner" src="img/background.png" alt="">
-    <div id="overlay">
+<div class="container">
+    <aside class="sidebar" id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+    <ul>
+        <li><i>🏠</i><span class="text">Início</span></li>
+        <li><i>📋</i><span class="text">Projetos</span></li>
+        <li><i>📧</i><span class="text">Mensagens</span></li>
+        <li><i>⚙️</i><span class="text">Configurações</span></li>
+    </ul>
+    </aside>
 
-        <h1>NV7</h1>
+    <main class="content">
+    <h1>Dashboard</h1>
+    <p>Menu lateral expansível usando HTML, CSS e JS puro!</p>
+    </main>
+</div>
 
-        <ul id="listaitem">
-            <li class="lista">•NOC</li>
-            <li class="lista">•Atendimento</li>
-            <li class="lista">•Operacional</li>
-        </ul>
-
-    <div id="quadrado"></div>
-</main>
-<script src="menu.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
