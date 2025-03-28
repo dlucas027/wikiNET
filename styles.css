@@ -9,13 +9,7 @@
   body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('img/img.jpg');
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-size: 30%; /* Define o tamanho da imagem como 30% do tamanho do elemento */
-    background-position: right center; /* Posiciona a imagem mais à direita e centralizada verticalmente */
-    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto rola a página */
 }
-
 
   /* Container principal com layout em flex (sidebar + conteúdo) */
 .container {
@@ -23,15 +17,13 @@
     height: 100vh;
 }
 
-h1{
+h1, h2{
   font-size: 55px;
-  margin-left: 50px;
+  text-align: center;
 }
 
 h2{
   font-family: "Caveat", cursive;
-  font-size: 55px;
-  margin-left: 50px;
 }
 
   /* Estilo da sidebar (menu lateral) */
@@ -102,4 +94,16 @@ h2{
 .content {
     flex: 1;
     padding: 2rem;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center; /* Para centralizar o conteúdo do gráfico */
+}
+
+#areaChart {
+  max-width: 600px;
+  margin: 0 auto; /* Centraliza o gráfico na tela */
+  height: 400px; /* Define uma altura fixa para o gráfico */
 }
