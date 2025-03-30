@@ -6,7 +6,7 @@ function toggleSidebar() {
 // Dados do gráfico em formato de objeto
 const data = {
     // Rótulos para cada fatia do gráfico
-    labels: ['Hardware', 'Protocolos', 'Softwares', 'Ferramentas de Monitoramento'],
+    labels: ['Hardware', 'Protocols', 'Softwares', 'Monitoring Tools'],
     
     // O conjunto de dados que será exibido no gráfico
     datasets: [{

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public vs Private IP Addresses</title>
+    <link rel="stylesheet" href="ip.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding IP Addresses</h1>
+        <p class="subtitle">Public vs Private — wikiNET <i class="bi bi-globe-americas"></i></p>
+    </header>
+
+    <main>
+        <section class="column">
+            <h2>What is an IP Address?</h2>
+            <p>
+                An IP address is a unique identifier for a device on a network. It allows devices to communicate with each other over the internet or within a local network.
+            </p>
+        </section>
+
+        <section class="column">
+            <h2>Public IP Address</h2>
+            <p>
+                A public IP is accessible from the internet and uniquely identifies a device across the entire web. It's assigned by your Internet Service Provider (ISP) and is used for online communication.
+            </p>
+            <ul>
+                <li>Assigned by ISPs</li>
+                <li>Used for internet communication</li>
+                <li>Unique across the globe</li>
+            </ul>
+        </section>
+
+        <section class="column">
+            <h2>Private IP Address</h2>
+            <p>
+                Private IPs are used within local networks (LANs) to identify devices like computers, smartphones, and printers. They cannot be accessed directly from the internet.
+            </p>
+            <ul>
+                <li>Used in internal networks</li>
+                <li>Not routable on the internet</li>
+                <li>Assigned by routers</li>
+            </ul>
+        </section>
+
+        <section class="column highlight">
+            <h2>Private IP Ranges</h2>
+            <p>The following blocks are reserved for private IP usage:</p>
+            <ul>
+                <li>10.0.0.0 – 10.255.255.255</li>
+                <li>172.16.0.0 – 172.31.255.255</li>
+                <li>192.168.0.0 – 192.168.255.255</li>
+            </ul>
+        </section>
+
+        <section class="column">
+            <h2>Why Does It Matter?</h2>
+            <p>
+                Understanding public and private IPs is essential for configuring firewalls, NAT, VPNs, and securing networks effectively.
+            </p>
+        </section>
+
+        <section class="column">
+            <h2>Fun Fact 💡</h2>
+            <p>
+                NAT (Network Address Translation) allows multiple devices with private IPs to share one public IP — a brilliant workaround due to IPv4 exhaustion!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Learn Networking with Confidence 🚀</p>
+    </footer>
+
+    <script src="ip.js"></script>
+</body>
+</html>
