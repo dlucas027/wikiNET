@@ -6,15 +6,15 @@ function toggleSidebar() {
 // Dados do gráfico em formato de objeto
 const data = {
     // Rótulos para cada fatia do gráfico
-    labels: ['DevOps', 'Redes', 'Cibersegurança', 'Desenvolvimento'],
+    labels: ['Hardware', 'Protocolos', 'Softwares', 'Ferramentas de Monitoramento'],
     
     // O conjunto de dados que será exibido no gráfico
     datasets: [{
         // Rótulo do conjunto de dados (usado na legenda)
-        label: 'Áreas de TI',
+        label: 'Porcentagem de Conteúdo',
         
-        // Dados reais para cada área (porcentagem de profissionais em cada área)
-        data: [25, 20, 15, 40],
+        // Dados reais para cada área (porcentagem calculada)
+        data: [41.67, 33.33, 16.67, 8.33],
         
         // Cores de fundo para cada fatia do gráfico
         backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'],
@@ -23,6 +23,7 @@ const data = {
         hoverOffset: 10
     }]
 };
+
 
 // Configuração do gráfico, como o tipo e as opções de exibição
 const config = {

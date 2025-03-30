@@ -1,7 +1,5 @@
-/* Importa fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bungee&family=Bungee+Tint&family=Caveat:wght@400..700&family=Markazi+Text:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Boldonse&family=Bungee&family=Bungee+Tint&family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
 
-/* Resetando margens, preenchimentos e configurações de box-sizing para todos os elementos */
 * {
     margin: 0; /* Remove a margem de todos os elementos */
     padding: 0; /* Remove o preenchimento de todos os elementos */
@@ -29,6 +27,10 @@ h1, h2 {
 /* Estilo específico para h2, alterando a fonte */
 h2 {
     font-family: "Caveat", cursive; /* Define a fonte como 'Caveat' com estilo cursivo */
+}
+
+h3{
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Configurações para a sidebar (barra lateral) */
@@ -80,6 +82,7 @@ h2 {
 /* Estilo para os ícones na sidebar */
 .sidebar i {
     font-size: 18px; /* Define o tamanho da fonte do ícone */
+    font-family: "Roboto Condensed", sans-serif;
     width: 30px; /* Define a largura do ícone */
     text-align: center; /* Alinha o ícone no centro */
 }
