@@ -1,109 +1,121 @@
+/* Importa fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bungee&family=Bungee+Tint&family=Caveat:wght@400..700&family=Markazi+Text:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+/* Resetando margens, preenchimentos e configurações de box-sizing para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem de todos os elementos */
+    padding: 0; /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e margens no cálculo do tamanho dos elementos */
 }
 
-  /* Define altura da página e fonte global */
-  body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
+/* Define as configurações para o corpo e a página inteira */
+body, html {
+    height: 100%; /* Faz com que a altura do body e html ocupe 100% da altura da janela */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
 }
 
-  /* Container principal com layout em flex (sidebar + conteúdo) */
+/* Contêiner principal que será usado para criar o layout */
 .container {
-    display: flex;
-    height: 100vh;
+    display: flex; /* Exibe os elementos filhos de forma flexível (em linha ou coluna) */
+    height: 100vh; /* Define a altura do contêiner como 100% da altura da janela */
 }
 
-h1, h2{
-  font-size: 55px;
-  text-align: center;
+/* Configurações para os títulos (h1 e h2) */
+h1, h2 {
+    font-size: 65px; /* Define o tamanho da fonte como 55px */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
-h2{
-  font-family: "Caveat", cursive;
+/* Estilo específico para h2, alterando a fonte */
+h2 {
+    font-family: "Caveat", cursive; /* Define a fonte como 'Caveat' com estilo cursivo */
 }
 
-  /* Estilo da sidebar (menu lateral) */
+/* Configurações para a sidebar (barra lateral) */
 .sidebar {
-    background-color: #2c3e50; /* azul escuro */
-    color: white;
-    width: 220px; /* largura normal (expandida) */
-    transition: width 0.3s; /* animação suave ao mudar a largura */
-    overflow: hidden; /* evita vazamento de conteúdo */
+    background-color: #2c3e50; /* Define a cor de fundo da sidebar */
+    color: white; /* Define a cor do texto da sidebar como branca */
+    width: 220px; /* Largura inicial da sidebar */
+    transition: width 0.3s; /* Define uma transição suave para a mudança de largura */
+    overflow: hidden; /* Impede o conteúdo da sidebar de transbordar quando a largura for reduzida */
+    display: flex; /* Exibe os itens da sidebar como flexbox */
+    flex-direction: column; /* Organiza os itens da sidebar de forma vertical */
+}
+
+/* Classe para quando a sidebar estiver colapsada (fechada) */
+.sidebar.collapsed {
+    width: 60px; /* Largura da sidebar quando estiver fechada */
+}
+
+/* Botão de alternância para abrir e fechar a sidebar */
+.toggle-btn {
+    background-color: #1abc9c; /* Define a cor de fundo do botão */
+    padding: 10px; /* Define o preenchimento dentro do botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    text-align: center; /* Alinha o texto dentro do botão */
+    font-size: 30px; /* Define o tamanho da fonte no botão */
+}
+
+/* Estilo da lista na sidebar */
+.sidebar ul {
+    list-style: none; /* Remove os marcadores das listas */
+    margin-top: 20px; /* Adiciona uma margem no topo da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+/* Estilo para os itens da lista na sidebar */
+.sidebar li {
+    display: flex; /* Exibe os itens da lista como flexbox */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 15px; /* Adiciona um preenchimento de 15px nos itens */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre os itens */
+    transition: background 0.2s; /* Transição suave para a cor de fundo ao passar o mouse */
+}
+
+/* Efeito visual quando o mouse passa sobre um item da lista */
+.sidebar li:hover {
+    background-color: #34495e; /* Altera a cor de fundo do item quando o mouse passa por cima */
+}
+
+/* Estilo para os ícones na sidebar */
+.sidebar i {
+    font-size: 18px; /* Define o tamanho da fonte do ícone */
+    width: 30px; /* Define a largura do ícone */
+    text-align: center; /* Alinha o ícone no centro */
+}
+
+/* Estilo para o texto dentro dos itens da sidebar */
+.sidebar .text {
+    transition: opacity 0.3s; /* Transição suave para a opacidade do texto */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Quando a sidebar estiver colapsada, o texto fica invisível */
+.sidebar.collapsed .text {
+    opacity: 0; /* Torna o texto invisível */
+    pointer-events: none; /* Impede interações com o texto */
+}
+
+/* Estilo para o conteúdo principal da página */
+.content { 
+    flex: 1; /* Ocupa o espaço restante */
     display: flex;
     flex-direction: column;
-}
-
-  /* Quando a sidebar estiver colapsada */
-.sidebar.collapsed {
-    width: 60px; /* largura menor (somente ícones visíveis) */
-}
-
-  /* Botão do topo para expandir/recolher */
-.toggle-btn {
-    background-color: #1abc9c;
-    padding: 10px;
-    cursor: pointer;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     text-align: center;
-    font-size: 30px;
-}
-
-  /* Lista de itens de menu */
-.sidebar ul {
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
-}
-
-  /* Estilo dos itens de menu */
-.sidebar li {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-  /* Hover para destacar item ao passar o mouse */
-.sidebar li:hover {
-    background-color: #34495e;}
-
-  /* Ícone do item */
-.sidebar i {
-    font-size: 18px;
-    width: 30px;
-    text-align: center;
-}
-
-  /* Texto do item */
-.sidebar .text {
-    transition: opacity 0.3s;
-    white-space: nowrap; /* impede quebra de linha */
-}
-
-  /* Quando a sidebar está colapsada, o texto some */
-.sidebar.collapsed .text {
-    opacity: 0;
-    pointer-events: none; /* impede clique no texto oculto */
-}
-
-  /* Área de conteúdo principal */
-.content {
-    flex: 1;
     padding: 2rem;
 }
 
-.content {
-  flex: 1;
-  padding: 2rem;
-  text-align: center; /* Para centralizar o conteúdo do gráfico */
+/* Estilo para o gráfico */
+#areaChart {
+    max-width: 90%; /* Define a largura máxima do gráfico como 90% */
+    margin: 0 auto; /* Centraliza o gráfico horizontalmente */
+    height: 250px; /* Define a altura do gráfico */
+    transition: max-width 0.3s; /* Transição suave para a largura máxima do gráfico */
 }
 
-#areaChart {
-  max-width: 600px;
-  margin: 0 auto; /* Centraliza o gráfico na tela */
-  height: 400px; /* Define uma altura fixa para o gráfico */
+.content h2,
+.content h3 {
+    margin-bottom: 20px;
 }
