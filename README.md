@@ -1,4 +1,4 @@
-# Central de Treinamentos NV7
+# wikiNET
 
 🚀 **Bem-vindo à Central de Treinamentos NV7!**
 
