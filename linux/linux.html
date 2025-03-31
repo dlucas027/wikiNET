@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wikiNET</title>
+    <link rel="stylesheet" href="linux.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="title"></h1>
+        <p class="subtitle">Linux & Windows Commands — wikiNET <i class="bi bi-terminal"></i></p>
+    </header>
+    <main>
+        <section class="column">
+            <h2>Essential Linux Commands</h2>
+            <p>
+                Linux provides powerful command-line tools for managing files, processes, and system configurations.
+            </p>
+            <ul>
+                <li><strong>ls</strong> - List directory contents</li>
+                <li><strong>cd</strong> - Change directory</li>
+                <li><strong>mkdir</strong> - Create a new directory</li>
+                <li><strong>rm</strong> - Remove files or directories</li>
+                <li><strong>cp</strong> - Copy files and directories</li>
+                <li><strong>mv</strong> - Move or rename files</li>
+                <li><strong>grep</strong> - Search text in files</li>
+                <li><strong>chmod</strong> - Change file permissions</li>
+                <li><strong>top</strong> - Show system resource usage</li>
+                <li><strong>ps</strong> - Display running processes</li>
+            </ul>
+        </section>
+        <section class="column">
+            <h2>Essential Windows Commands</h2>
+            <p>
+                Windows Command Prompt and PowerShell provide various commands for system management.
+            </p>
+            <ul>
+                <li><strong>dir</strong> - List directory contents</li>
+                <li><strong>cd</strong> - Change directory</li>
+                <li><strong>mkdir</strong> - Create a new directory</li>
+                <li><strong>del</strong> - Delete files</li>
+                <li><strong>copy</strong> - Copy files</li>
+                <li><strong>move</strong> - Move or rename files</li>
+                <li><strong>find</strong> - Search for text in files</li>
+                <li><strong>attrib</strong> - Change file attributes</li>
+                <li><strong>tasklist</strong> - List running processes</li>
+                <li><strong>taskkill</strong> - Terminate processes</li>
+            </ul>
+        </section>
+        <section class="column highlight">
+            <h2>Key Differences</h2>
+            <p>
+                Linux and Windows command lines have similarities but also key differences in syntax and functionality.
+            </p>
+            <ul>
+                <li>Linux commands are case-sensitive; Windows commands are not</li>
+                <li>Linux uses <strong>/</strong> for directories, Windows uses <strong>\</strong></li>
+                <li>Linux focuses on shell scripting; Windows has PowerShell for automation</li>
+            </ul>
+        </section>
+        <section class="column">
+            <h2>Common Use Cases</h2>
+            <p>
+                These commands help system administrators, developers, and users perform essential tasks efficiently.
+            </p>
+        </section>
+        <section class="column">
+            <h2>Powerful Combinations</h2>
+            <p>
+                Some command combinations can boost productivity significantly.
+            </p>
+            <ul>
+                <li><strong>Linux:</strong> <code>ls -lh | grep "filename"</code> (Find files by name)</li>
+                <li><strong>Windows:</strong> <code>dir /s | find "filename"</code> (Search files recursively)</li>
+                <li><strong>Linux:</strong> <code>ps aux | grep "process"</code> (Find running processes)</li>
+                <li><strong>Windows:</strong> <code>tasklist | find "process"</code> (List specific processes)</li>
+            </ul>
+        </section>
+        <section class="column">
+            <h2>Fun Fact 💡</h2>
+            <p>
+                The Linux <code>rm -rf /</code> command was so infamous that modern Linux distros prevent users from executing it without confirmation!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p id="footeranimate">Master Your CLI Skills!</p>
+    </footer>
+    <script src="linux.js"></script>
+</body>
+</html>
