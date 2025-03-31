@@ -55,7 +55,13 @@ footer {
     background: #002244;
     color: white;
 }
-
+#footeranimate {
+    display: inline-block;
+    white-space: nowrap; 
+    min-width: 250px;
+    overflow: hidden; 
+    vertical-align: bottom; 
+}
 /* Animation */
 @keyframes fadeIn {
     from {

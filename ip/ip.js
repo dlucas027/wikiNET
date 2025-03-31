@@ -1,6 +1,6 @@
-// Quando a página for totalmente carregada, a função será executada
+// When the page is fully loaded, the function will be executed
 window.onload = function () {
-    // Efeito de fadeIn para as colunas
+    // FadeIn effect for the columns
     const columns = document.querySelectorAll(".column");
 
     columns.forEach((col, index) => {
@@ -12,7 +12,7 @@ window.onload = function () {
         }, index * 200);
     });
 
-    // Adiciona efeito de hover via JS
+    // Add hover effect via JS
     columns.forEach(column => {
         column.addEventListener("mouseenter", () => {
             column.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
@@ -27,9 +27,9 @@ window.onload = function () {
         });
     });
 
-    // Efeito de digitação no título (h1)
+    // Typing effect on the title (h1)
     var h1 = document.querySelector("#title");
-    var text = "Wi-Fi Types and Differences";
+    var text = "What Are Public and Private IP Addresses?";
     var index = 0;
 
     function typeText() {
@@ -41,7 +41,7 @@ window.onload = function () {
     }
     typeText();
 
-    // Efeito camaleão para o subtítulo (p)
+    // Chameleon effect for the subtitle (p)
     var subtitle = document.querySelector(".subtitle");
 
     setInterval(() => {
@@ -50,34 +50,34 @@ window.onload = function () {
         subtitle.style.color = randomColor;
     }, 1000);
 
-    // Efeito de digitação em loop no footer
-    var footer = document.querySelector("footer p");
+    // Typing effect in loop on the footer paragraph
+    var footer = document.querySelector("#footeranimate");
     var footerText = "Learn Networking with Confidence!";
     var footerIndex = 0;
-    var deleting = false; // Para controlar a digitação e a exclusão do texto
+    var deleting = false; // Control the typing and deleting effect
 
     function typeFooter() {
         if (!deleting) {
-            // Digitando
+            // Typing
             footer.innerHTML = footerText.substring(0, footerIndex);
             footerIndex++;
             if (footerIndex > footerText.length) {
-                deleting = true; // Começar a deletar depois de terminar a digitação
-                setTimeout(typeFooter, 4000); // Espera 2s antes de apagar
+                deleting = true; // Start deleting after typing is finished
+                setTimeout(typeFooter, 4000); // Wait 4 seconds before deleting
                 return;
             }
         } else {
-            // Apagando
+            // Deleting
             footer.innerHTML = footerText.substring(0, footerIndex);
             footerIndex--;
             if (footerIndex === 0) {
-                deleting = false; // Voltar a digitar
+                deleting = false; // Start typing again
             }
         }
-        setTimeout(typeFooter, deleting ? 50 : 100); // Mais rápido ao apagar
+        setTimeout(typeFooter, deleting ? 50 : 100); // Faster while deleting
     }
 
-    typeFooter(); // Inicia o loop infinito no footer
+    typeFooter(); // Starts the infinite loop for the footer typing effect
 
     console.log("Animation script loaded successfully.");
 };

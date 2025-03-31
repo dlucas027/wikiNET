@@ -29,7 +29,7 @@ window.onload = function () {
 
     // Typing effect on the title (h1)
     var h1 = document.querySelector("#title");
-    var text = "Wi-Fi Types and Differences";
+    var text = "Exploring Different Types of WI-FI Networks";
     var index = 0;
 
     function typeText() {

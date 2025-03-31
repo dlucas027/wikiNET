@@ -57,10 +57,10 @@ footer {
 }
 #footeranimate {
     display: inline-block;
-    white-space: nowrap; /* Impede quebras de linha */
-    min-width: 250px; /* Defina a largura mínima necessária */
-    overflow: hidden; /* Esconde o texto que está sendo deletado */
-    vertical-align: bottom; /* Evita que o texto suba ou desça durante o efeito */
+    white-space: nowrap; 
+    min-width: 250px;
+    overflow: hidden; 
+    vertical-align: bottom; 
 }
 
 /* Animation */
