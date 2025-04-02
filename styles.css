@@ -40,11 +40,11 @@ h3{
 }
 
 .sidebar.collapsed {
-    width: 60px; /* Largura do menu */
+    width: 80px; /* Largura do menu */
 }
 
 .toggle-btn {
-    background-color: #1abc9c; 
+    background-color: #002244; 
     padding: 10px; 
     cursor: pointer; 
     text-align: center; 

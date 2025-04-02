@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 200px;
+    background: #002244;
+    color: white;
+    padding: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+.sidebar ul li a:hover {
+    background-color: #34495e; 
+}
+.sidebar ul li a{
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background: #002244;
+    color: white;
+}
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh; /* Reduzi um pouco o tamanho do gráfico */
+}
+.chart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.chart-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+}
+canvas {
+    max-width: 50%;
+    max-height: 350px; /* Tamanho reduzido para melhor encaixe */
+}

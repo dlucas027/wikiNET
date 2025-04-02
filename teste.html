@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wikiNET</title>
+    <link rel="stylesheet" href="teste.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="ip/ip.html"><span class="text">Public and Private IP</span></a></li>
+                <li><a href="wifi/wifi.html"><span class="text">Types of WI-FI</span></a></li>
+                <li><a href="updown/updown.html"><span class="text">Upload and Download</span></a></li>
+                <li><a href="onu/onu.html"><span class="text">ONU and ONT</span></a></li>
+                <li><a href="oltswitche/oltswitch.html"><span class="text">OLT vs Switch</span></a></li>
+                <li><a href="router/router.html"><span class="text">Edge Routers</span></a></li>
+                <li><a href="epon/epon.html"><span class="text">EPON</span></a></li>
+                <li><a href="gpon/gpon.html"><span class="text">GPON</span></a></li>
+                <li><a href="zabbix/zabbix.html"><span class="text">Zabbix and Grafana</span></a></li>
+                <li><a href="linux/linux.html"><span class="text">Windows and Linux</span></a></li>
+                <li><a href="cables/cables.html"><span class="text">Types of Cables</span></a></li>
+                <li><a href="sites/sites.html"><span class="text">Useful Sites</span></a></li>
+                <li><a href="protocol/protocol.html"><span class="text">Protocols</span></a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1 id="title"></h1>
+                <p class="subtitle">Zabbix & Grafana — wikiNET <i class="bi bi-graph-up"></i></p>
+            </header>
+            <section class="chart-container">
+                <h2 class="chart-title">Título do Gráfico Aqui</h2>
+                <canvas id="myChart"></canvas>
+                <p class="chart-description">Texto explicativo abaixo do gráfico.</p>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="teste.js"></script>
+</body>
+</html>
