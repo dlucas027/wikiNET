@@ -3,55 +3,50 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 }
 
+// Typing effect on the title (h1)
+document.addEventListener("DOMContentLoaded", function () {
+    var h1 = document.querySelector("h1");
+    var text = "wikiNET";
+    var icon = '<i class="bi bi-globe-americas"></i>'; // Ícone separado
+    var index = 0;
+
+    function typeText() {
+        if (index < text.length) {
+            h1.innerHTML = text.substring(0, index + 1); // Atualiza o texto sendo digitado
+            index++;
+            setTimeout(typeText, 100);
+        } else {
+            h1.innerHTML += icon; // Adiciona o ícone após a digitação
+        }
+    }
+
+    h1.innerHTML = ""; // Garante que o h1 está vazio antes de iniciar
+    typeText();
+});
+
 // Dados do gráfico em formato de objeto
 const data = {
-    // Rótulos para cada categoria do gráfico
     labels: ['Hardware', 'Protocols', 'Softwares', 'Monitoring Tools'],
-    
-    // O conjunto de dados que será exibido no gráfico
     datasets: [{
-        // Rótulo do conjunto de dados (usado na legenda)
         label: 'Porcentagem de Conteúdo',
-        
-        // Dados reais para cada categoria (porcentagem calculada)
         data: [41.67, 33.33, 16.67, 8.33],
-        
-        // Cores de fundo das barras
         backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'],
-        
-        // Cor da borda das barras
         borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'],
-        
-        // Espessura da borda
         borderWidth: 1
     }]
 };
 
 // Configuração do gráfico
 const config = {
-    // Tipo de gráfico: alterado para 'bar' (barras)
     type: 'bar',
-
-    // Os dados a serem exibidos no gráfico
     data: data,
-
-    // Opções de personalização do gráfico
     options: {
-        // Faz o gráfico ser responsivo
         responsive: false,
-        
-        // Configurações dos eixos
         scales: {
-            y: {
-                beginAtZero: true // Garante que o eixo Y começa no zero
-            }
+            y: { beginAtZero: true }
         },
-        
-        // Configurações dos plugins
         plugins: {
-            legend: {
-                position: 'top', // Posição da legenda no topo
-            },
+            legend: { position: 'top' },
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
@@ -63,8 +58,14 @@ const config = {
     }
 };
 
-// Criação do gráfico, passando o contexto do canvas e as configurações
-var areaChart = new Chart(
-    document.getElementById('areaChart'), // Elemento canvas onde o gráfico será desenhado
-    config // Configuração do gráfico definida acima
-);
+// Criação do gráfico
+var areaChart = new Chart(document.getElementById('areaChart'), config);
+
+// Chameleon effect for the subtitle (p)
+var subtitle = document.querySelector("h4");
+
+setInterval(() => {
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    subtitle.style.transition = "color 1s ease";
+    subtitle.style.color = randomColor;
+}, 1000);
