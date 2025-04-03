@@ -1,56 +1,57 @@
+// Função para alternar a visibilidade da sidebar (colapsar/expandir)
 function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("collapsed");
+    const sidebar = document.getElementById("sidebar"); // Obtém o elemento com ID "sidebar"
+    sidebar.classList.toggle("collapsed"); // Alterna a classe "collapsed" para mostrar ou esconder a sidebar
 }
 
-// Typing effect on the title (h1)
+// Efeito de digitação no título (h1) ao carregar a página
 document.addEventListener("DOMContentLoaded", function () {
-    var h1 = document.querySelector("h1");
-    var text = "wikiNET";
-    var icon = '<i class="bi bi-globe-americas"></i>'; // Ícone separado
-    var index = 0;
+    var h1 = document.querySelector("h1"); // Seleciona o elemento <h1>
+    var text = "wikiNET"; // Texto que será digitado
+    var icon = '<i class="bi bi-globe-americas"></i>'; // Ícone a ser adicionado ao final da digitação
+    var index = 0; // Índice inicial para percorrer os caracteres
 
     function typeText() {
-        if (index < text.length) {
-            h1.innerHTML = text.substring(0, index + 1); // Atualiza o texto sendo digitado
-            index++;
-            setTimeout(typeText, 100);
+        if (index < text.length) { // Enquanto houver caracteres para adicionar
+            h1.innerHTML = text.substring(0, index + 1); // Atualiza o texto no <h1>
+            index++; // Avança para o próximo caractere
+            setTimeout(typeText, 100); // Chama a função novamente após 100ms
         } else {
-            h1.innerHTML += icon; // Adiciona o ícone após a digitação
+            h1.innerHTML += icon; // Quando terminar a digitação, adiciona o ícone ao final
         }
     }
 
-    h1.innerHTML = ""; // Garante que o h1 está vazio antes de iniciar
-    typeText();
+    h1.innerHTML = ""; // Garante que o <h1> está vazio antes de iniciar a digitação
+    typeText(); // Inicia o efeito de digitação
 });
 
-// Dados do gráfico em formato de objeto
+// ** Configuração dos dados para o gráfico **
 const data = {
-    labels: ['Hardware', 'Protocols', 'Softwares', 'Monitoring Tools'],
+    labels: ['Hardware', 'Protocols', 'Softwares', 'Monitoring Tools'], // Rótulos do eixo X
     datasets: [{
-        label: 'Porcentagem de Conteúdo',
-        data: [41.67, 33.33, 16.67, 8.33],
-        backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'],
-        borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'],
-        borderWidth: 1
+        label: 'Porcentagem de Conteúdo', // Nome da legenda do conjunto de dados
+        data: [41.67, 33.33, 16.67, 8.33], // Valores de porcentagem para cada categoria
+        backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'], // Cores das barras
+        borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'], // Cores da borda das barras
+        borderWidth: 1 // Largura da borda
     }]
 };
 
-// Configuração do gráfico
+// ** Configuração do gráfico **
 const config = {
-    type: 'bar',
-    data: data,
+    type: 'bar', // Define o tipo do gráfico (barras)
+    data: data, // Associa os dados configurados
     options: {
-        responsive: false,
+        responsive: false, // Define que o gráfico não se ajusta automaticamente ao tamanho da tela
         scales: {
-            y: { beginAtZero: true }
+            y: { beginAtZero: true } // Faz com que o eixo Y comece em 0
         },
         plugins: {
-            legend: { position: 'top' },
+            legend: { position: 'top' }, // Posição da legenda no topo
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
-                        return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                        return tooltipItem.label + ': ' + tooltipItem.raw + '%'; // Exibe rótulo e porcentagem no tooltip
                     }
                 }
             }
@@ -58,14 +59,14 @@ const config = {
     }
 };
 
-// Criação do gráfico
-var areaChart = new Chart(document.getElementById('areaChart'), config);
+// ** Criação do gráfico **
+var areaChart = new Chart(document.getElementById('areaChart'), config); // Renderiza o gráfico no elemento com ID "areaChart"
 
-// Chameleon effect for the subtitle (p)
-var subtitle = document.querySelector("h4");
+// ** Efeito camaleão para o subtítulo (h4) **
+var subtitle = document.querySelector("h4"); // Seleciona o elemento <h4> que será afetado
 
 setInterval(() => {
-    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    subtitle.style.transition = "color 1s ease";
-    subtitle.style.color = randomColor;
-}, 1000);
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16); // Gera uma cor hexadecimal aleatória
+    subtitle.style.transition = "color 1s ease"; // Define uma transição suave na mudança de cor
+    subtitle.style.color = randomColor; // Aplica a nova cor ao subtítulo
+}, 1000); // Muda a cor a cada 1 segundo
