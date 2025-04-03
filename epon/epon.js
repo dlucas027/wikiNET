@@ -54,7 +54,7 @@ window.onload = function () {
     var footer = document.querySelector("#footeranimate");
     var footerText = "Learn Networking with Confidence!";
     var footerIndex = 0;
-    var deleting = false; // Control the typing and deleting effect
+    var deleting = false; // Controls the typing and deleting effect
 
     function typeFooter() {
         if (!deleting) {
