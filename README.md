@@ -56,6 +56,8 @@ Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou com
 ![image](https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573)
 
 
+![image](https://github.com/user-attachments/assets/1025a041-c4ee-478a-979c-0fe9a274c93e)
+
 
 ---
 
