@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ** Chart data configuration **
 const data = {
-    labels: ['Hardware', 'Protocols', 'Softwares', 'Monitoring Tools'], // Labels for the X-axis
+    labels: ['Hardware', 'Softwares', 'Protocols', 'Monitoring Tools'], // Labels for the X-axis
     datasets: [{
         label: 'Content Percentage', // Name of the dataset legend
-        data: [41.67, 33.33, 16.67, 8.33], // Percentage values for each category
+        data: [41.67, 16.67, 33.33, 8.33], // Percentage values for each category
         backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'], // Colors of the bars
         borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'], // Border colors of the bars
         borderWidth: 1 // Border width
@@ -63,7 +63,7 @@ const config = {
 var areaChart = new Chart(document.getElementById('areaChart'), config); // Renders the chart in the element with ID "areaChart"
 
 // ** Chameleon effect for the subtitle (h4) **
-var subtitle = document.querySelector("h4"); // Selects the <h4> element to be affected
+var subtitle = document.querySelector(""); // Selects the <h4> element to be affected
 
 setInterval(() => {
     const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16); // Generates a random hexadecimal color
