@@ -49,7 +49,8 @@ Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou com
 
 
 2. **Interface Geral**
-![Interface](https://github.com/user-attachments/assets/b97d8c82-c205-407d-8011-2ccb77d967dc)
+![image](https://github.com/user-attachments/assets/7fd9486e-2934-43d4-8fb0-f3d26926ddcc)
+
 
 
 ---
