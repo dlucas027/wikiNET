@@ -53,6 +53,10 @@ Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou com
 
 
 
+![image](https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573)
+
+
+
 ---
 
 ## 💡 Como Contribuir
