@@ -44,7 +44,8 @@ Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou com
 ## 📸 Prévia do Projeto
 
 1. **Menu Lateral Interativo**
-![Menu Lateral](https://github.com/user-attachments/assets/a23cf7d9-c8e8-4c30-8214-9a973291c513)
+![image](https://github.com/user-attachments/assets/330a7f72-0b3b-4b2d-8705-47d1b097d9ec)
+
 
 
 2. **Interface Geral**
