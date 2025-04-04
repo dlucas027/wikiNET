@@ -25,38 +25,38 @@ document.addEventListener("DOMContentLoaded", function () {
     typeText(); // Starts the typing effect
 });
 
-// ** Chart data configuration **
+// Chart data configuration
 const data = {
     labels: ['Hardware', 'Softwares', 'Protocols', 'Monitoring Tools'], // Labels for the X-axis
     datasets: [{
-        label: 'Content Percentage', // Mantém o título da legenda, mas sem quadrado
+        label: 'Content Percentage', // Keeps the legend title, but hides square
         data: [41.67, 16.67, 33.33, 8.33], // Percentage values for each category
-        backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'], // Colors of the bars
-        borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'], // Border colors of the bars
+        backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'], // Bar colors
+        borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'], // Border colors
         borderWidth: 1 // Border width
     }]
 };
 
-// ** Chart configuration **
+// Chart configuration
 const config = {
-    type: 'bar', // Defines the chart type (bar)
-    data: data, // Associates the configured data
+    type: 'bar', // Chart type
+    data: data,
     options: {
-        responsive: false, // Sets the chart to not automatically adjust to screen size
+        responsive: false,
         scales: {
-            y: { beginAtZero: true } // Ensures the Y-axis starts at 0
+            y: { beginAtZero: true }
         },
         plugins: {
             legend: {
                 position: 'top',
                 labels: {
-                    usePointStyle: true, // Usa estilos personalizados para os itens da legenda
+                    usePointStyle: true, // Custom legend style
                     generateLabels: function (chart) {
                         return Chart.defaults.plugins.legend.labels.generateLabels(chart).map(label => {
                             if (label.text === 'Content Percentage') {
-                                label.pointStyle = false; // Remove o quadrado da label "Content Percentage"
-                                label.fillStyle = 'transparent'; // Garante que não tenha cor
-                                label.strokeStyle = 'transparent'; // Remove a borda
+                                label.pointStyle = false; // Hide square for "Content Percentage"
+                                label.fillStyle = 'transparent'; // No fill
+                                label.strokeStyle = 'transparent'; // No border
                             }
                             return label;
                         });
@@ -66,7 +66,7 @@ const config = {
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
-                        return tooltipItem.label + ': ' + tooltipItem.raw + '%'; // Displays label and percentage in the tooltip
+                        return tooltipItem.label + ': ' + tooltipItem.raw + '%'; // Shows label and percentage
                     }
                 }
             }
@@ -74,27 +74,56 @@ const config = {
     }
 };
 
-// ** Chart creation **
-var areaChart = new Chart(document.getElementById('areaChart'), config); // Renders the chart in the element with ID "areaChart"
+// Create and render the chart
+var areaChart = new Chart(document.getElementById('areaChart'), config);
 
+// Function to update chart theme when dark mode is toggled
+function updateChartTheme(chart) {
+    const isDark = document.body.classList.contains("dark-mode");
 
-/* Dark mode button */
+    // Change X and Y axes text and grid colors
+    chart.options.scales.x = {
+        ticks: {
+            color: isDark ? "white" : "black"
+        },
+        grid: {
+            color: isDark ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.1)"
+        }
+    };
+    chart.options.scales.y = {
+        beginAtZero: true,
+        ticks: {
+            color: isDark ? "white" : "black"
+        },
+        grid: {
+            color: isDark ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.1)"
+        }
+    };
+
+    // Change legend label color
+    chart.options.plugins.legend.labels.color = isDark ? "white" : "black";
+
+    chart.update(); // Apply changes
+}
+
+// Dark mode toggle button
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.createElement("button"); // Create the button
     toggleButton.id = "toggle-theme"; // Set an ID for the button
 
-    // Set the sun icon as the default
-    toggleButton.innerHTML = "&#x1F31E;"; // Unicode for the sun icon
-    document.body.prepend(toggleButton); // Add the button at the beginning of the body
+    toggleButton.innerHTML = "&#x1F31E;"; // Default to sun icon
+    document.body.prepend(toggleButton); // Add button to top of body
 
     toggleButton.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode"); // Toggle between themes
+        document.body.classList.toggle("dark-mode"); // Toggle theme
 
-        // Update the button icon according to the current theme
+        // Change icon according to theme
         if (document.body.classList.contains("dark-mode")) {
-            toggleButton.innerHTML = "&#x1F31A;"; // Crescent moon (for dark mode)
+            toggleButton.innerHTML = "&#x1F31A;"; // Moon icon
         } else {
-            toggleButton.innerHTML = "&#x1F31E;"; // Sun (for light mode)
+            toggleButton.innerHTML = "&#x1F31E;"; // Sun icon
         }
+
+        updateChartTheme(areaChart); // Update chart colors
     });
 });
