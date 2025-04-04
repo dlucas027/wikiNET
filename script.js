@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const data = {
     labels: ['Hardware', 'Softwares', 'Protocols', 'Monitoring Tools'], // Labels for the X-axis
     datasets: [{
-        label: 'Content Percentage', // Name of the dataset legend
+        label: 'Content Percentage', // Mantém o título da legenda, mas sem quadrado
         data: [41.67, 16.67, 33.33, 8.33], // Percentage values for each category
         backgroundColor: ['#FF6F61', '#4E73DF', '#F39C12', '#1ABC9C'], // Colors of the bars
         borderColor: ['#C44D4B', '#3756A0', '#B3730A', '#118570'], // Border colors of the bars
@@ -47,7 +47,22 @@ const config = {
             y: { beginAtZero: true } // Ensures the Y-axis starts at 0
         },
         plugins: {
-            legend: { position: 'top' }, // Positions the legend at the top
+            legend: {
+                position: 'top',
+                labels: {
+                    usePointStyle: true, // Usa estilos personalizados para os itens da legenda
+                    generateLabels: function (chart) {
+                        return Chart.defaults.plugins.legend.labels.generateLabels(chart).map(label => {
+                            if (label.text === 'Content Percentage') {
+                                label.pointStyle = false; // Remove o quadrado da label "Content Percentage"
+                                label.fillStyle = 'transparent'; // Garante que não tenha cor
+                                label.strokeStyle = 'transparent'; // Remove a borda
+                            }
+                            return label;
+                        });
+                    }
+                }
+            },
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
@@ -62,11 +77,24 @@ const config = {
 // ** Chart creation **
 var areaChart = new Chart(document.getElementById('areaChart'), config); // Renders the chart in the element with ID "areaChart"
 
-// ** Chameleon effect for the subtitle (h4) **
-var subtitle = document.querySelector(""); // Selects the <h4> element to be affected
 
-setInterval(() => {
-    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16); // Generates a random hexadecimal color
-    subtitle.style.transition = "color 1s ease"; // Sets a smooth transition for the color change
-    subtitle.style.color = randomColor; // Applies the new color to the subtitle
-}, 1000); // Changes the color every 1 second
+/* Dark mode button */
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.createElement("button"); // Create the button
+    toggleButton.id = "toggle-theme"; // Set an ID for the button
+
+    // Set the sun icon as the default
+    toggleButton.innerHTML = "&#x1F31E;"; // Unicode for the sun icon
+    document.body.prepend(toggleButton); // Add the button at the beginning of the body
+
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode"); // Toggle between themes
+
+        // Update the button icon according to the current theme
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.innerHTML = "&#x1F31A;"; // Crescent moon (for dark mode)
+        } else {
+            toggleButton.innerHTML = "&#x1F31E;"; // Sun (for light mode)
+        }
+    });
+});

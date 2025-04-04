@@ -99,7 +99,7 @@ p{
     color: inherit;
 }
 
-/* Conteúdo Principal */
+/* Content main */
 .content { 
     flex: 1;
     display: flex;
@@ -109,7 +109,7 @@ p{
     text-align: center;
     padding: 2rem;
 }
-/*Gráfico*/
+/*Graphics*/
 #areaChart {
     max-width: 90%; 
     margin: 0 auto;
@@ -117,3 +117,43 @@ p{
     transition: max-width 0.3s;
 }
 
+/* BTN dark mode */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles*/
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Styling the dark mode button */
+#toggle-theme {
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    padding: 0; /* Removes padding */
+    border: none; /* Removes border */
+    background: none; /* Removes background */
+    color: white; /* Icon color */
+    font-size: 40px; /* Icon size */
+    cursor: pointer; /* Keeps the cursor as a pointer */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    width: 40px; /* Fixed size for the icon */
+    height: 40px; /* Fixed size for the icon */
+    display: flex; /* Uses flexbox to center the icon */
+    justify-content: center; /* Aligns the icon horizontally */
+    align-items: center; /* Aligns the icon vertically */
+    opacity: 0.5; /* Makes the button slightly transparent */
+}
+
+#toggle-theme:hover {
+    opacity: 1; /* Increases opacity on hover */
+}
+
+/* Active state */
+#toggle-theme:active {
+    opacity: 0.7; /* Reduces opacity when clicked */
+}
