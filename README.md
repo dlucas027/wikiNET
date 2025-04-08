@@ -65,5 +65,10 @@ I also dove deeper into **media queries** to improve responsiveness, making sure
 
 ---
 
+5. **Content Overview (Chart Section)**  
+<img src="https://github.com/user-attachments/assets/753e8fba-02ad-4d9a-ba73-b4d8a95ff632" width="900"/>
+
+---
+
 💻 **Desenvolvido por Matheus de Lucas Arouca**
 
