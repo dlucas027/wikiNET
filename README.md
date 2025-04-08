@@ -1,17 +1,28 @@
-# wikiNET
+# wikiNET🌎
 
-🚀 **Bem-vindo à Central de Treinamentos NV7!**
+## Welcome to wikiNET!
 
-Este é um projeto desenvolvido para organizar e padronizar os processos internos da empresa, facilitando o acesso a treinamentos e documentações importantes.
+This project started at the first telecom company I worked for. We used to have regular internal training sessions, but there wasn’t a dedicated space to host the materials. Because of that, we ended up losing a lot of valuable content, and new employees often struggled to find those training resources.
+
+**wikiNET** was born from that experience. Here, I’ve gathered basic networking knowledge for beginners.  
+It’s important to note that the content here is different from the one used in the company — this is meant for the open-source community.  
+The company's material remains private and contains internal links and proprietary information.
+
+---
+
+## 📦 Contents
+
+While this version isn’t as complete as the original company project, it still contains valuable resources for those starting out in the world of networking, including:
+
+- 🧠 Brief overviews of hardware and software
+- 🌐 Useful websites
+- 🔧 Basic monitoring tools
+- 🛠️ Essential concepts to avoid getting lost in the networking world
 
 ---
 
-## 🌟 Funcionalidades
-- Menu lateral interativo para navegação fácil entre os conteúdos.
-- Estrutura clara e organizada para diferentes temas e processos.
-- Plataforma estática e intuitiva para acesso rápido aos materiais.
 
----
+
 
 ## 🎯 Objetivo
 O principal objetivo deste projeto é proporcionar um ambiente centralizado e acessível para toda a equipe, permitindo que os treinamentos e processos sejam apresentados de forma mais eficiente e organizada.
