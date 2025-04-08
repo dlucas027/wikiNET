@@ -46,27 +46,22 @@ I also dove deeper into **media queries** to improve responsiveness, making sure
 ## 📸 Project Preview
 
 1. **Interactive Sidebar Menu**  
-<img src="https://github.com/user-attachments/assets/330a7f72-0b3b-4b2d-8705-47d1b097d9ec" width="800"/>
+<img src="https://github.com/user-attachments/assets/330a7f72-0b3b-4b2d-8705-47d1b097d9ec" width="900"/>
 
 ---
 
 2. **Main Interface Overview**  
-<img src="https://github.com/user-attachments/assets/7fd9486e-2934-43d4-8fb0-f3d26926ddcc" width="800"/>
+<img src="https://github.com/user-attachments/assets/7fd9486e-2934-43d4-8fb0-f3d26926ddcc" width="900"/>
 
 ---
 
 3. **Light Mode Interface**  
-<img src="https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573" width="800"/>
+<img src="https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573" width="900"/>
 
 ---
 
 4. **Dark Mode Interface**  
-<img src="https://github.com/user-attachments/assets/502c56c8-85e3-4e25-b9fc-3bfc7a558e64" width="800"/>
-
----
-
-## 💡 Como Contribuir
-Contribuições são muito bem-vindas! Se você tiver ideias, sugestões ou encontrar problemas, fique à vontade para abrir uma _issue_ ou enviar um _pull request_.
+<img src="https://github.com/user-attachments/assets/502c56c8-85e3-4e25-b9fc-3bfc7a558e64" width="900"/>
 
 ---
 
