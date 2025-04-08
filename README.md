@@ -43,24 +43,25 @@ I also dove deeper into **media queries** to improve responsiveness, making sure
 
 ---
 
-## 📸 Prévia do Projeto
+## 📸 Project Preview
 
-1. **Menu Lateral Interativo**
-![image](https://github.com/user-attachments/assets/330a7f72-0b3b-4b2d-8705-47d1b097d9ec)
+1. **Interactive Sidebar Menu**  
+<img src="https://github.com/user-attachments/assets/330a7f72-0b3b-4b2d-8705-47d1b097d9ec" width="800"/>
 
+---
 
+2. **Main Interface Overview**  
+<img src="https://github.com/user-attachments/assets/7fd9486e-2934-43d4-8fb0-f3d26926ddcc" width="800"/>
 
-2. **Interface Geral**
-![image](https://github.com/user-attachments/assets/7fd9486e-2934-43d4-8fb0-f3d26926ddcc)
+---
 
+3. **Light Mode Interface**  
+<img src="https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573" width="800"/>
 
+---
 
-![image](https://github.com/user-attachments/assets/19696766-0418-4b4b-a02c-a231581f5573)
-
-
-![image](https://github.com/user-attachments/assets/502c56c8-85e3-4e25-b9fc-3bfc7a558e64)
-
-
+4. **Dark Mode Interface**  
+<img src="https://github.com/user-attachments/assets/502c56c8-85e3-4e25-b9fc-3bfc7a558e64" width="800"/>
 
 ---
 
