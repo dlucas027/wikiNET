@@ -70,5 +70,6 @@ I also dove deeper into **media queries** to improve responsiveness, making sure
 
 ---
 
-💻 **Desenvolvido por Matheus de Lucas Arouca**
-
+[🌐wikiNET](https://dlucas027.github.io/gamehub/)
+## Matheus de Lucas Arouca
+[LinkedIn](https://www.linkedin.com/in/delucas027)
