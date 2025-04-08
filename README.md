@@ -33,19 +33,13 @@ While this version isn’t as complete as the original company project, it still
 
 ---
 
-## 📚 Aprendizados
-Este projeto permitiu aplicar conhecimentos em desenvolvimento web e mostrou como uma solução simples pode trazer um grande impacto no ambiente de trabalho. Foi também uma oportunidade de explorar:
-- Organização de informações.
-- Melhorias na experiência do usuário (UX).
-- Desenvolvimento rápido com tecnologias básicas.
+## 📘 What I Learned
 
----
+In this project, one of the key takeaways was learning how to create interactive charts using JavaScript, experimenting with modern libraries for data visualization. I also faced the challenge of implementing a functional sidebar menu on smaller devices — making sure navigation remained intuitive even on limited screen sizes.
 
-## 📱 Melhorias Futuras
-- Tornar a página responsiva para dispositivos móveis.
-- Adicionar funcionalidade de busca para facilitar a localização de documentos.
-- Implementar autenticação de usuários para maior segurança.
-- Integrar com APIs para atualização dinâmica de conteúdos.
+Maintaining the clean and modern look I envisioned, while delivering a layout that feels like a real wiki, was both interesting and rewarding.
+
+I also dove deeper into **media queries** to improve responsiveness, making sure the layout adapts smoothly to different screen resolutions without losing its aesthetic. Overall, it was a great hands-on experience in layout adaptation, usability, and UI/UX best practices for front-end projects.
 
 ---
 
