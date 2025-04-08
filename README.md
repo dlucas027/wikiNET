@@ -21,18 +21,15 @@ While this version isn’t as complete as the original company project, it still
 
 ---
 
+## 🧰 Technologies Used
 
+- **CSS**: Used to style and animate components across the page, including layout, theming (like dark mode), and responsive adjustments for different screen sizes.
 
+- **UX/UI**: The interface was designed with a clean and simple user experience in mind — from collapsible sidebars to smooth typing effects and dark mode toggling, everything aims to make navigation intuitive and pleasant.
 
-## 🎯 Objetivo
-O principal objetivo deste projeto é proporcionar um ambiente centralizado e acessível para toda a equipe, permitindo que os treinamentos e processos sejam apresentados de forma mais eficiente e organizada.
+- **JavaScript**: Powers the dynamic features such as the typing animation, theme toggle, sidebar behavior, and the chart rendering with interactivity and customization.
 
----
-
-## 🛠️ Tecnologias Utilizadas
-- **HTML**: Para estruturação do site.
-- **CSS**: Para estilização e design do menu e das páginas.
-- **JavaScript**: Para implementar a interatividade no menu lateral.
+- **Responsiveness**: While the chart itself is set to a fixed size for better control, the overall layout adapts well to different devices. The theme switcher and interactive elements remain accessible across screen types.
 
 ---
 
